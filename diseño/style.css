@@ -1,0 +1,555 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    background-color:rgb(0, 0, 0);
+}
+
+/* ************************************** CELULAR ********************************************************************************** */
+/* ********************************************************************************************************************************* */
+
+/*--------------------- HEADER ------------------------------*/
+
+    header{
+        width: 100%;    
+        height: 100vh;
+        background-color:rgb(255, 111, 111);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+    }
+
+    header h1{
+        margin: 10% 0 10% 0; /* arriba derecha abajo izquierda */
+        text-align: center;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: lighter;
+        font-size: 2.5rem;
+        text-shadow: black 0.05em 0.05em;
+    }
+
+    header img{
+        width: 10rem;
+    }
+
+    header nav{
+        width: 0;
+        height: 100%;
+    }
+
+    header ul{
+        height: 60%;
+        width: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    li{
+        list-style: none;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        text-transform: uppercase;   
+    } 
+
+    ul li a{
+        padding: 10px;
+        display: block;
+        text-shadow: black 0.1em 0.1em;
+    }
+
+    ul li a:hover{
+        background-color: black; 
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+/*---------------------  MAIN MENU ----------------------*/
+
+    main{
+        width: 100%;
+        height: 100%;
+        padding: 60px;
+        margin-top: 0;
+    }
+
+    section{
+        width: 100%;
+        height: 100%;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        color: white;
+    }
+
+    img{
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    section img{
+        width: 100%;
+    }
+
+    .sectionPrincipalImg{
+        grid-area: imgBroadway;
+    }
+
+    .sectionPrincipal img{
+        grid-area: img2;
+    }
+
+    .sectionPrincipal h2{
+        font-size: 3.5vw;
+        grid-area: titulo;
+    }
+
+    .sectionPrincipal p{
+        grid-area: parrafo;
+    }
+
+    .section{
+        margin: 1rem 0;
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        gap: 2rem;
+        grid-template-areas: 
+            'imgBroadway'
+            'img2'
+            'titulo'
+            'parrafo';
+        justify-items: center;
+    }
+
+
+/*---------------------  MAIN GALLERY ----------------------*/
+
+    article{
+        width: 100%;
+        height: 100%;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+    }
+
+    main h2{
+        margin: 10px;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+        font-size: 2vh;
+        text-align: center;
+    }
+
+    .mainGallery{
+        width: 100%;
+        height: 50%;
+        padding: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;        
+        color: white;
+        font-family: 'Raleway', sans-serif;
+    }
+
+
+/*---------------------  MAIN TICKETS ----------------------*/
+
+    .articleTickets{
+        padding: 2rem;
+    }
+    .articleTickets div{
+        margin: 1rem;
+    }
+
+/*---------------------  MAIN CONTACT ----------------------*/
+
+    .articleContact{
+        padding: 50px;
+    }
+
+/*-------------------------  FOOTER  ------------------------------------- */
+
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+        background-color:rgb(255, 111, 111);
+    }
+
+    .maps{
+        text-decoration: underline;
+    }
+
+    p{ 
+        font-size: 3.5vw;
+        font-weight: lighter;
+    }
+
+    footer img{
+        width: 60%;
+    }
+
+    .footerIcons{
+        height: 20vh;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1rem;
+    }
+
+    .footerIcons a{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerUbicacion img{
+        width: 15%;
+        grid-area: iconoMapa;
+    }
+
+    .footerUbicacion p{
+        text-align: center;
+        grid-area: parrafoMapa;
+    }
+
+    .footerUbicacion{
+        margin: 0 2.5rem;
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        gap: 2rem;
+        grid-template-areas: 
+            'iconoMapa'
+            'parrafoMapa'  ;
+        justify-items: center;
+    }
+
+    .footerPrivacidad{
+        margin: 2rem 2.5rem;
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        gap: 2rem;
+        grid-template-areas: 
+            'privacidadH4'
+            'privacidadParrafo';
+        justify-items: center;
+    }
+
+    .footerPrivacidad h4{
+        text-align: center;
+        grid-area: privacidadH4;
+    }
+
+    .footerPrivacidad p{
+        text-align: center;
+        grid-area: privacidadParrafo;
+    }
+
+
+/* ************************************ TABLET ************************************************************************************* */
+/* ********************************************************************************************************************************* */
+
+/*--------------------- HEADER ----------------------*/
+
+
+@media screen and (min-width: 600px){
+    
+    header{
+        width: 100%;    /*ancho*/
+        height: 30vw;  /*alto*/
+        background-color:rgb(255, 111, 111);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 1rem;
+        word-spacing: 1rem;
+    }    
+
+    header h1{
+        margin: 0 ; /* arriba derecha abajo izquierda */
+        text-align: center;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: lighter;
+        font-size: 2.5vw;
+        text-shadow: black 0.05em 0.05em;
+    }
+
+    header img{
+        width: 10vw;
+    }
+    
+    header nav{
+        height: 100%;
+        width: 70%;
+    }
+
+    header ul{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    li{
+        
+        list-style: none;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+        font-size: 2.5vw;
+        text-transform: uppercase;   
+    } 
+    
+    ul li a{
+        padding: 10px;
+        display: block;
+        text-shadow: black 0.1em 0.1em;
+    }
+    
+    ul li a:hover{
+        background-color: black; 
+    }
+    
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+/*---------------------  MAIN GALLERY ----------------------*/
+
+    article{
+        width: 100%;
+        height: 100%;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+    }
+
+    main h2{
+        margin: 5px;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+        font-size: 2.5vw;
+        text-align: center;
+    }
+
+    .mainGallery{
+        width: 100%;
+        height: 50%;
+        padding: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;        
+        color: white;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .mainGallery h4{
+        font-weight: bolder;
+        font-size: 1.5vw;
+        margin-top: 20px;
+
+    }
+
+    /*.articleGallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        gap: 15px;
+
+    }
+    .articleGallery img{
+        width: 60%;
+    }
+*/
+/*---------------------  MAIN TICKETS ----------------------*/
+
+    .articleTickets{
+        padding: 5rem;
+    }
+    .articleTickets div{
+        margin: 3rem;
+    }
+    h3{
+        font-size: 4vw;
+        margin-top: 20px;
+    }
+
+/*---------------------  FOOTER  ----------------------*/
+
+    p{ 
+        font-size: 3vw;
+        font-weight: lighter;
+    }
+
+    footer img{
+        width: 50%;
+    }
+
+    .footerIcons a{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerPrivacidad{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+/* *********************************** DESKTOP ************************************************************************************* */
+/* ********************************************************************************************************************************* */
+
+/*--------------------- HEADER ----------------------*/
+
+@media screen and (min-width: 1024px){
+    
+    header{
+        width: 100%;   
+        height: 20vw;  
+        background-color:rgb(255, 111, 111);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 1rem;
+        word-spacing: 1rem;
+    }    
+
+    header h1{
+        margin: 0 3% 0 3% ; /* arriba derecha abajo izquierda*/ 
+        text-align: center;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: lighter;
+        font-size: 2.5vw;
+        text-shadow: black 0.05em 0.05em;
+    }
+
+    /*---------------------  MAIN GALLERY ----------------------*/
+
+    main h2{
+        margin: 20px;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+        font-size: 2.5vw;
+        text-align: center;
+    }
+
+    .mainGallery{
+        width: 100%;
+        height: 50%;
+        padding: 10% 20% 10% 20%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;        
+        color: white;
+        font-family: 'Raleway', sans-serif;
+    }
+
+/*---------------------  MAIN TICKETS ----------------------*/
+
+    .articleTickets{
+        padding: 5rem;
+    }
+    .articleTickets div{
+        margin: 3rem;
+    }
+
+/*---------------------  FOOTER  ----------------------*/
+
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;    
+        background-color:rgb(255, 111, 111);
+    }
+
+    footer p{ 
+        font-size: 2vw;
+        font-weight: lighter;
+    }
+
+    footer img{
+        width: 4vw;
+    }
+
+    .footerIcons{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 4rem;
+    }
+
+    .footerIcons a{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerUbicacion img{
+        width: 20%;
+    }
+
+    .footerUbicacion p{
+        text-align: center;
+    }
+
+    .footerUbicacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    } 
+
+    .footerPrivacidad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .footerPrivacidad h4{
+        text-align: center;
+    }
+
+    .footerPrivacidad p{
+        text-align: center;
+    } 
+
+}
+
+}
