@@ -13,67 +13,32 @@ body{
 
 /*--------------------- HEADER ------------------------------*/
 
-    header{
-        width: 100%;    
-        height: 100vh;
-        background-color:rgb(255, 111, 111);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 3rem;
+    header nav{
+        padding: 20px;
     }
 
     header h1{
-        margin: 10% 0 10% 0; /* arriba derecha abajo izquierda */
-        text-align: center;
-        color: white;
+        margin: 20px;
+        font-size: large;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: 'Raleway', sans-serif;
+        text-shadow: rgb(255, 117, 117) 0.2em 0.2em;
+    }
+
+    ul li a h6{
         font-family: 'Raleway', sans-serif;
         font-weight: lighter;
-        font-size: 2.5rem;
-        text-shadow: black 0.05em 0.05em;
+        font-size: 20px;
+        text-shadow: rgb(255, 161, 161) 0.05em 0.05em;
+    }
+    ul li a h6:hover{
+        background-color: rgb(255, 255, 255); 
     }
 
-    header img{
-        width: 10rem;
-    }
-
-    header nav{
-        width: 0;
-        height: 100%;
-    }
-
-    header ul{
-        height: 60%;
-        width: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    li{
-        list-style: none;
-        text-align: center;
-        font-family: 'Raleway', sans-serif;
-        font-weight: bolder;
-        font-size: 1.5rem;
-        text-transform: uppercase;   
-    } 
-
-    ul li a{
-        padding: 10px;
-        display: block;
-        text-shadow: black 0.1em 0.1em;
-    }
-
-    ul li a:hover{
-        background-color: black; 
-    }
-
-    a{
-        text-decoration: none;
-        color: white;
+    header nav div form{
+        padding: 20px;
     }
 
 /*---------------------  MAIN MENU ----------------------*/
@@ -165,6 +130,10 @@ body{
         font-family: 'Raleway', sans-serif;
     }
 
+    .mainGallery h4{
+        padding: 0.2rem;
+        background-color: black;
+    }
 
 /*---------------------  MAIN TICKETS ----------------------*/
 
@@ -190,11 +159,12 @@ body{
         color: white;
         font-family: 'Raleway', sans-serif;
         font-weight: bolder;
-        background-color:rgb(255, 111, 111);
+        background-color: rgb(221, 65, 65);
     }
 
     .maps{
         text-decoration: underline;
+        color: white;
     }
 
     p{ 
@@ -273,73 +243,8 @@ body{
 
 
 @media screen and (min-width: 600px){
-    
-    header{
-        width: 100%;    /*ancho*/
-        height: 30vw;  /*alto*/
-        background-color:rgb(255, 111, 111);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1rem 1rem;
-        word-spacing: 1rem;
-    }    
 
-    header h1{
-        margin: 0 ; /* arriba derecha abajo izquierda */
-        text-align: center;
-        color: white;
-        font-family: 'Raleway', sans-serif;
-        font-weight: lighter;
-        font-size: 2.5vw;
-        text-shadow: black 0.05em 0.05em;
-    }
-
-    header img{
-        width: 10vw;
-    }
-    
-    header nav{
-        height: 100%;
-        width: 70%;
-    }
-
-    header ul{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    li{
-        
-        list-style: none;
-        text-align: center;
-        font-family: 'Raleway', sans-serif;
-        font-weight: bolder;
-        font-size: 2.5vw;
-        text-transform: uppercase;   
-    } 
-    
-    ul li a{
-        padding: 10px;
-        display: block;
-        text-shadow: black 0.1em 0.1em;
-    }
-    
-    ul li a:hover{
-        background-color: black; 
-    }
-    
-    a{
-        text-decoration: none;
-        color: white;
-    }
-
-/*---------------------  MAIN GALLERY ----------------------*/
+    /*---------------------  MAIN GALLERY ----------------------*/
 
     article{
         width: 100%;
@@ -376,17 +281,6 @@ body{
 
     }
 
-    /*.articleGallery{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: auto;
-        gap: 15px;
-
-    }
-    .articleGallery img{
-        width: 60%;
-    }
-*/
 /*---------------------  MAIN TICKETS ----------------------*/
 
     .articleTickets{
@@ -432,28 +326,6 @@ body{
 
 @media screen and (min-width: 1024px){
     
-    header{
-        width: 100%;   
-        height: 20vw;  
-        background-color:rgb(255, 111, 111);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1rem 1rem;
-        word-spacing: 1rem;
-    }    
-
-    header h1{
-        margin: 0 3% 0 3% ; /* arriba derecha abajo izquierda*/ 
-        text-align: center;
-        color: white;
-        font-family: 'Raleway', sans-serif;
-        font-weight: lighter;
-        font-size: 2.5vw;
-        text-shadow: black 0.05em 0.05em;
-    }
-
     /*---------------------  MAIN GALLERY ----------------------*/
 
     main h2{
@@ -494,7 +366,7 @@ body{
         color: white;
         font-family: 'Raleway', sans-serif;
         font-weight: bolder;    
-        background-color:rgb(255, 111, 111);
+        background-color: rgb(221, 65, 65);
     }
 
     footer p{ 
