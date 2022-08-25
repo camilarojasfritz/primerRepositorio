@@ -1,0 +1,344 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+/* ************************************** CELULAR ********************************************************************************** */
+/* ********************************************************************************************************************************* */
+/*--------------------- HEADER ------------------------------*/
+header nav {
+  padding: 20px;
+}
+header nav h1 {
+  margin: 20px;
+  font-size: large;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  text-shadow: rgb(255, 117, 117) 0.2em 0.2em;
+}
+
+ul li a h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  text-shadow: rgb(255, 161, 161) 0.05em 0.05em;
+}
+ul li a h6:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+/*---------------------  MAIN MENU ----------------------*/
+main { /*General*/
+  width: 100%;
+  height: 100%;
+  padding: 60px;
+  margin-top: 0;
+  /*Fin Section Menu*/
+}
+main section { /*Inicio Section Menu*/
+  width: 100%;
+  height: 100%;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  color: white;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  gap: 2rem;
+  grid-template-areas: "imgBroadway" "img2" "titulo" "parrafo";
+  justify-items: center;
+}
+main section img {
+  grid-area: img2;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+main section .sectionPrincipalImg {
+  grid-area: imgBroadway;
+}
+main section .sectionPrincipal h2 {
+  font-size: 3.5vw;
+  grid-area: titulo;
+}
+main section .sectionPrincipal p {
+  grid-area: parrafo;
+}
+main article { /*Article General*/
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  /*Fin Main Gallery*/
+}
+main article h2 {
+  margin: 10px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  font-size: 2vh;
+  text-align: center;
+}
+main article .mainGallery { /*Inicio Main Gallery*/
+  width: 100%;
+  height: 50%;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+main article .mainGallery h4 {
+  padding: 0.2rem;
+  background-color: black;
+}
+main article .articleTickets { /*Article Tickets*/
+  padding: 2rem;
+}
+main article .articleTickets div {
+  margin: 1rem;
+}
+main article .articleContact { /*Article Contact*/
+  padding: 50px;
+}
+
+/*-------------------------  FOOTER  ------------------------------------- */
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  background-color: rgb(221, 65, 65);
+}
+
+.maps {
+  text-decoration: underline;
+  color: white;
+}
+
+p {
+  font-size: 3.5vw;
+  font-weight: lighter;
+}
+
+footer img {
+  width: 60%;
+  padding: 8px;
+}
+
+.footerIcons {
+  height: 20vh;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.footerIcons a {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.footerUbicacion img {
+  width: 15%;
+  grid-area: iconoMapa;
+}
+
+.footerUbicacion p {
+  text-align: center;
+  grid-area: parrafoMapa;
+}
+
+.footerUbicacion {
+  margin: 0 2.5rem;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  gap: 2rem;
+  grid-template-areas: "iconoMapa" "parrafoMapa";
+  justify-items: center;
+}
+
+.footerPrivacidad {
+  margin: 2rem 2.5rem;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  gap: 2rem;
+  grid-template-areas: "privacidadH4" "privacidadParrafo";
+  justify-items: center;
+}
+
+.footerPrivacidad h4 {
+  text-align: center;
+  grid-area: privacidadH4;
+}
+
+.footerPrivacidad p {
+  text-align: center;
+  grid-area: privacidadParrafo;
+}
+
+/* ************************************ TABLET ************************************************************************************* */
+/* ********************************************************************************************************************************* */
+@media screen and (min-width: 600px) {
+  /*---------------------  MAIN GALLERY ----------------------*/
+  article {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+  }
+  main h2 {
+    margin: 5px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+    font-size: 2.5vw;
+    text-align: center;
+  }
+  .mainGallery {
+    width: 100%;
+    height: 50%;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    color: white;
+    font-family: "Raleway", sans-serif;
+  }
+  .mainGallery h4 {
+    font-weight: bolder;
+    font-size: 1.5vw;
+    margin-top: 20px;
+  }
+  /*---------------------  MAIN TICKETS ----------------------*/
+  .articleTickets {
+    padding: 5rem;
+  }
+  .articleTickets div {
+    margin: 3rem;
+  }
+  h3 {
+    font-size: 4vw;
+    margin-top: 20px;
+  }
+  /*---------------------  FOOTER  ----------------------*/
+  p {
+    font-size: 3vw;
+    font-weight: lighter;
+  }
+  footer img {
+    width: 50%;
+  }
+  .footerIcons a {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+  .footerPrivacidad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* *********************************** DESKTOP ************************************************************************************* */
+  /* ********************************************************************************************************************************* */
+}
+@media screen and (min-width: 600px) and (min-width: 1024px) {
+  /*---------------------  MAIN GALLERY ----------------------*/
+  main h2 {
+    margin: 20px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+    font-size: 2.5vw;
+    text-align: center;
+  }
+  .mainGallery {
+    width: 100%;
+    height: 50%;
+    padding: 10% 20% 10% 20%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    color: white;
+    font-family: "Raleway", sans-serif;
+  }
+  /*---------------------  MAIN TICKETS ----------------------*/
+  .articleTickets {
+    padding: 5rem;
+  }
+  .articleTickets div {
+    margin: 3rem;
+  }
+  /*---------------------  FOOTER  ----------------------*/
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+    background-color: rgb(221, 65, 65);
+  }
+  footer p {
+    font-size: 2vw;
+    font-weight: lighter;
+  }
+  footer img {
+    width: 4vw;
+  }
+  .footerIcons {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 4rem;
+  }
+  .footerIcons a {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+  .footerUbicacion img {
+    width: 20%;
+  }
+  .footerUbicacion p {
+    text-align: center;
+  }
+  .footerUbicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footerPrivacidad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footerPrivacidad h4 {
+    text-align: center;
+  }
+  .footerPrivacidad p {
+    text-align: center;
+  }
+}/*# sourceMappingURL=aplicandoSass.css.map */
