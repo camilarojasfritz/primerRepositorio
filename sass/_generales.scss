@@ -7,3 +7,39 @@
 body{
     background-color:rgb(0, 0, 0);
 }
+
+/*--------------------- HEADER ------------------------------*/
+
+header{
+    nav{
+        padding: 20px;
+        
+        h1{
+            margin: 20px;
+            font-size: large;
+            color: $black;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Raleway', sans-serif;
+            text-shadow: $red 0.2em 0.2em;
+        }
+    }
+}
+  
+ul {
+    li {
+        a {
+            h6{
+                font-family: "Raleway", sans-serif;
+                font-weight: lighter;
+                font-size: 20px;
+                text-shadow: $red 0.05em 0.05em;
+          
+            &:hover{
+                background-color: $white;
+          }
+        }
+      }
+    }
+  }
+
